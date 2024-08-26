@@ -1,0 +1,488 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #171717 !important;
+
+}
+
+nav{
+  height: 80px !important;
+  /* width: 100% !important; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: space-between;
+  padding: 10px 5% 8px 5%;
+  margin-bottom: 20px; */
+  background-color: #171717;
+  margin-bottom: 0;
+  /* position: fixed; */
+  
+
+}
+
+h1.logo{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  line-height: 80px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+h1 span{
+  color: #ffe100;
+  text-decoration: underline;
+}
+
+nav ul{
+  list-style: none;
+  margin-right: 20px;
+
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: #ffffff;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* a.active{
+  background-color: #ffe100;
+  transition: .5s;
+} */
+
+a:hover, a.active:focus{
+  color: #171717;
+  transition: .5s;
+  background-color: #ffe100;
+  transition: .5s;
+}
+
+nav .search input{
+ width: 300px;
+ height: 40px;
+ padding: 10px;
+ padding-left: 40px;
+ border: 1px solid hsl(0, 1%, 19%);
+ border-radius: 7px;
+ background-color: #171717;
+ color: hsl(0, 0%, 40%);
+}
+
+nav .search i{
+    color: #cccccc;
+    font-size: 20px;
+    position: relative;
+    right: -10%;
+    cursor: pointer;
+}
+
+.collapse{
+  background-color: #171717;
+  text-align: center;
+}
+
+.swiper {
+  width: 95%;
+  height: 85%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.swiper::selection{
+  user-select: none;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper-slide .image .black{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.9));
+}
+
+.swiper-slide .image .black h1{
+  font-size: 30px;
+  text-align: left;
+  position: relative;
+  top: 60%;
+  left: 5%;
+  color: #fff;
+}
+
+.swiper-slide .image .black .star{
+  color: #ffe100;
+  text-align: left;
+  font-size: 16px;
+  margin: 10px 0;
+  position: relative;
+  top: 60%;
+  left: 5%;
+}
+
+.swiper-slide .image .black p{
+  width: 550px;
+  text-align: justify;
+  font-size: 16px;
+  color: #cccccc;
+  margin: 10px 0;
+  position: relative;
+  top: 60%;
+  left: 5%;
+  line-height: 23px;
+  font-family: "Ink Free";
+
+}
+
+.swiper-slide .image .black .genre{
+  text-align: left;
+  font-size: 16px;
+  margin: 13px 0;
+  position: relative;
+  top: 60%;
+  left: 5% ;
+}
+
+.swiper-slide .image .black .genre a.category{
+  background: #282931;
+  text-decoration: none;
+  color: #cccccc;
+  padding: 2px 7px;
+  margin: 5px;
+}
+
+.swiper-slide .image .black .genre a.category span{
+  color: #ffe100;
+}
+
+.swiper-slide .image .black .watch{
+  width: 700px;
+  text-align: left;
+  display: flex;
+  font-size: 16px;
+  margin: 10px 0;
+  position: relative;
+  top: 60%;
+  left: 5%;
+
+}
+
+.swiper-slide .image .black .watch i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #ffe100;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiper-slide .image .black .watch p{
+  position: relative;
+  left: 15px;
+  font-family: sans-serif;
+}
+
+.swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.second{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 25px;  
+}
+
+.second img{
+  width: 150px;
+}
+
+.second .latest{
+  width: 95%;
+  margin: 0 auto;
+
+}
+
+.second .latest h1{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.second .latest .box{
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.second .latest .box .card{
+  width: 250px;
+  height: 370px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.second .latest .box .card .details{
+  width: 250px;
+  height: 370px;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 8px;
+  transition: 0.3s;
+  transform: 0.3s;
+  opacity: 0.7;
+}
+
+
+.second .latest .box .card:hover .details{
+  opacity: 1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7));
+
+  transform: translateY(0);
+}
+
+.second .latest .box .card .details .left{
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  transform: translateX(-100px);
+  transform: 0.4s;
+  opacity: 0;
+}
+
+.second .latest .box .card:hover .details .left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.second .latest .box .card .details p.name{
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.second .latest .box .card .details .left .date_quality{
+  display: flex;
+  align-items: center;
+}
+
+.second .latest .box .card .details .left .date_quality p.quality{
+  width: 30px;
+  font-size: 13px;
+  background-color: #ffe100;
+  color: #282931;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.second .latest .box .card .details .left .date_quality p.date{
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.second .latest .box .card .details .left p.category{
+  margin-left: 10px;
+  font-size: 13px;
+  margin-bottom: 8px;
+
+}
+
+.second .latest .box .card .details .left .info{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.second .latest .box .card .details .left .info .rate{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.second .latest .box .card .details .left .info .rate i{
+  font-size: 12px;
+  color: #ffe100;
+  margin-right: 5px;
+
+}
+
+.second .latest .box .card .details .left .info .rate p{
+  font-size: 12px;
+}
+
+.second .latest .box .card .details .left .info .time{
+  display: flex;
+  align-items: center;
+
+}
+
+.second .latest .box .card .details .left .info .time i{
+  font-size: 12px;
+  color: #ffe100;
+  margin-right: 5px;
+
+}
+
+.second .latest .box .card .details .left .info .time p{
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.second .latest .box .card .details .right{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  transform: translateX(-100px);
+  transform: 0.4s;
+  opacity: 0;
+}
+
+.second .latest .box .card:hover .details .right {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.second .latest .box .card .details .right {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #ffe100;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #282931;
+  margin: 0 10px 8px 0;
+}
+
+.second .latest .box .card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.9));
+  padding: 7rem 0;
+  color: #fff;
+}
+
+.banner .banner-text h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+
+}
+
+.blog{
+  margin: 30px 0;
+}
+
+.blog img{
+  border-radius: 10px 10px 0 0;
+  height: 300px;
+}
+
+.blog .card{
+  background-color: #171717;
+  color: #fff;
+  border: none !important;
+  box-shadow: rgba(255, 255, 255, 0.5) 1px 1px 5px;
+  margin-bottom: 10%;
+  height: 100%;
+}
+
+.blog .card:hover{
+  box-shadow: none;
+  transition: box-shadow 0.3s;
+  opacity: .8;
+
+}
+
+.blog .card .card-body{
+  margin: 10px;
+}
+
+.blog .card .card-body h3{
+  margin: 15px 0;
+  font-size: 30px;
+}
+
+.blog .card .card-body .post-details span{
+  margin-right: 20px;
+  color: hsl(0, 0%, 70%);
+}
+
+.blog .card-body .card-text{
+  margin: 20px 0;
+}
+
+.blog .card-body a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog .card-body a:hover{
+  color: #ffe100;
+  background-color: #171717;
+}
