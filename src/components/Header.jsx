@@ -24,7 +24,7 @@ function Header({ name, value, search, display }) {
                   }}
                   
                 >
-                  <NavLink to={item} activeClassName={index === currentIndex ? "active" : null}>{item}</NavLink>
+                  <NavLink to={ item === 'Home'?'': item } activeClassName={index === currentIndex ? "active" : null}>{item}</NavLink>
                 </li>
               );
             })}

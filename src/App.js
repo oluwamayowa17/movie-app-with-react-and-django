@@ -41,7 +41,7 @@ function App() {
     <div>
       <Header name={navItems} value={movie} search={handleSearch} display={getMovies}/>
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" index element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
